@@ -38,15 +38,15 @@ p {
 }
 
 .gradient-overlay-container {
-  margin-top: -400px;
+  margin-top:-400px;
 }
 .gradient-overlay {
   background: rgb(29,31,36);
-background: -moz-linear-gradient(0deg, rgba(29,31,36,1) 0%, rgba(29,31,36,1) 55%, rgba(29,31,36,0) 100%);
-background: -webkit-linear-gradient(0deg, rgba(29,31,36,1) 0%, rgba(29,31,36,1) 55%, rgba(29,31,36,0) 100%);
-background: linear-gradient(0deg, rgba(29,31,36,1) 0%, rgba(29,31,36,1) 55%, rgba(29,31,36,0) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1d1f24",endColorstr="#1d1f24",GradientType=1);
-  height: 100vh;
+  background: -moz-linear-gradient(0deg, rgba(29,31,36,1) 0%, rgba(29,31,36,1) 55%, rgba(29,31,36,0) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(29,31,36,1) 0%, rgba(29,31,36,1) 55%, rgba(29,31,36,0) 100%);
+  background: linear-gradient(0deg, rgba(29,31,36,1) 0%, rgba(29,31,36,1) 55%, rgba(29,31,36,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1d1f24",endColorstr="#1d1f24",GradientType=1);
+  height: 100%;
 }
 
 .gradient-overlay.sticky.is-stuck{
@@ -55,8 +55,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1d1f24",endCo
 
 .text-bnt-container {
   padding: 0px 0;
-  height: 900px;
   max-width: 280px;
-  margin: -50vh auto 0 auto;
+  height: 900px;
+  margin: -300px auto;
   z-index: 1;
 }
