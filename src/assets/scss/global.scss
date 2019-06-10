@@ -1,5 +1,6 @@
 $font-color-light: #fefefe;
 $font-family-condensed: 'Roboto Condensed', 'HelveticaNeue-Condensed',sans-serif;
+$font-family: 'Roboto', 'HelveticaNeue-Condensed',sans-serif;
 $background-color-dark:  rgb(29,31,36);
 
 body {
@@ -21,11 +22,12 @@ body:before {
 }
 
 p {
-  text-align: center;
+  font-family: $font-family-condensed;
   font-size: 22px;
   font-weight: bold;
   font-style: italic;
   color: $font-color-light;
+  text-align: center;
 }
 
 // .grid-container {
@@ -38,7 +40,7 @@ p {
 }
 
 .gradient-overlay-container {
-  margin-top:-400px;
+  margin-top: -400px;
 }
 .gradient-overlay {
   background: rgb(29,31,36);

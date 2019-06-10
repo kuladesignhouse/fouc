@@ -11,31 +11,50 @@ ul {
   height: 100%;
   border-radius: 14px;
   padding: 2px 0;
-  width: 150px !important;
+  width: 200px !important;
   ul.accordion-menu {
     background-color: black;
     border-radius: 12px;
-    width: 146px;
+    width: 196px;
     margin: 0 auto;
     padding: 10px;
     li {
       color: $font-color-light;
-      a {
-        color: $font-color-light;
-      }
+      font-family: $font-family;
+      font-size: 18px;
+      font-weight: bold;
       a.btn-title {
-        margin-right: 20px;
-
+        color: $font-color-light;
+        margin: 0 auto;
+        padding: 20px 30px;
       }
     }
   }
 }
+
+//size buttons
+ul.vertical.nested {
+  margin: 5px 0 0 -20px;
+  padding: 0;
+  li {
+    background: rgb(15,15,15);
+    background: -moz-linear-gradient(24deg, rgba(15,15,15,1) 0%, rgba(83,83,83,1) 100%);
+    background: -webkit-linear-gradient(24deg, rgba(15,15,15,1) 0%, rgba(83,83,83,1) 100%);
+    background: linear-gradient(24deg, rgba(15,15,15,1) 0%, rgba(83,83,83,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f0f0f",endColorstr="#535353",GradientType=1);
+    display: inline-block;
+    width: 196px;
+    padding: 15px 0px 15px 42px;
+    margin: 1px 0 0 -26px;
+  }
+}
+
 // arrow on dropdown btn
 .accordion-menu .is-accordion-submenu-parent:not(.has-submenu-toggle) > a::after {
   display: block;
   width: 0;
   height: 0;
-  border: inset 6px;
+  border: inset 7px;
   content: '';
   border-bottom-width: 0;
   border-top-style: solid;
