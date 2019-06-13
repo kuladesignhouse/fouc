@@ -36,8 +36,6 @@ p {
 //   background-image: url(../img/code-background.jpg);
 // }
 
-
-
 .fouc-sticky.sticky.is-stuck {
   z-index: 0;
 }
@@ -45,6 +43,7 @@ p {
 .gradient-overlay-container {
   margin-top: -400px;
 }
+
 .gradient-overlay {
   background: rgb(29,31,36);
   background: -moz-linear-gradient(0deg, rgba(29,31,36,1) 0%, rgba(29,31,36,1) 55%, rgba(29,31,36,0) 100%);
@@ -54,7 +53,7 @@ p {
   height: 100vh;
 }
 
-.gradient-overlay.sticky.is-stuck{
+.gradient-overlay.sticky.is-stuck {
   z-index: auto;
 }
 
@@ -65,8 +64,8 @@ p {
   margin: -300px auto 100vh;
 }
 
-.buy-group:nth-of-type(2) {
-  margin-bottom: 0vh;
+.buy-group.bg-bottom {
+  margin-bottom: 70vh;
 }
 
 .text-bnt-container {
