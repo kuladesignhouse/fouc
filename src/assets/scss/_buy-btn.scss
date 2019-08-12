@@ -11,6 +11,10 @@ ul {
   border-radius: 14px;
   padding: 2px 0;
   width: 200px !important;
+    @include breakpoint(medium) {
+      margin:0;
+      float: right;
+    }
   ul.accordion-menu {
     background-color: black;
     border-radius: 12px;
@@ -36,6 +40,21 @@ ul {
     }
   }
 }
+
+//individual button styles
+
+#grab-shirt-btn {
+  margin-top: 30px;
+}
+#select-size-btn {
+  margin-top: 10px;
+}
+
+#buy-group-top .dropdown-btn-container {
+  float: none;
+  margin:0 auto;
+}
+
 
 
 

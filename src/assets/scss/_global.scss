@@ -19,6 +19,9 @@ body:before {
   z-index: -10;
   background-color: $background-color-dark;
   background: url(../img/code-background.jpg) no-repeat top left;
+   @include breakpoint(medium) {
+     background: url(../img/code-bg-med-up.jpg) no-repeat top left;
+   }
 }
 
 p {
@@ -29,6 +32,24 @@ p {
   color: $font-color-light;
   text-align: center;
   line-height: 1.3;
+    @include breakpoint(medium) {
+      font-size: 24px;
+    }
+}
+
+h1 {
+  font-family: $font-family-condensed;
+  font-size: 22px;
+  font-weight: bold;
+  font-style: italic;
+  color: $font-color-light;
+  text-align: center;
+  line-height: 1.3;
+    @include breakpoint(medium) {
+      font-size: 34px;
+      margin-bottom: 40px;
+      text-shadow: 0px 0px 50px rgba(0,0,0,1), 0px 0px 40px rgba(0,0,0,1), -30px 0px 40px rgba(0,0,0,1), 30px 0px 40px rgba(0,0,0,1),;
+    }
 }
 
 // .grid-container {
@@ -62,6 +83,31 @@ p {
   z-index: 1;
   width: auto;
   margin: -300px auto 100vh;
+  @include breakpoint(medium) {
+    max-width: 900px;
+    min-width: 300px;
+    margin: -700px auto 1000px;
+    padding: 0 90px;
+  }
+}
+
+//this effects the top buy group for the text to be larger and centered over the button there is also styles in the _buy-btn.scss that need to be adjusted also for the button
+#buy-group-top {
+  z-index: 1;
+  width: auto;
+  margin: -300px auto 100vh;
+  min-width: none;
+  max-width: none;
+  padding: none;
+  .text-bnt-container {
+    float: none;
+    @include breakpoint(medium) {
+      max-width: 400px;
+    }
+  }
+  @include breakpoint(medium) {
+    margin: -700px auto 1200px;
+  }
 }
 
 .buy-group.bg-bottom {
@@ -72,4 +118,7 @@ p {
   padding: 0;
   max-width: 280px;
   margin: 0 auto;
+  @include breakpoint(medium) {
+    float: left;
+  }
 }
